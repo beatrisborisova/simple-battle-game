@@ -1,0 +1,154 @@
+body {
+	width: 960px;
+	background: #302a23;
+	width: fit-content;
+	margin: auto;
+	font-size: 20px;
+}
+
+main {
+	background: #eeeae6;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-bottom: 50px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.80);
+}
+
+#game {
+	padding: 15px 50px;
+
+}
+
+#title {
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgb(39, 34, 26);
+	border-bottom: 5px solid #302a23;
+	box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 15%);
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-size: 38px;
+}
+
+#main {
+	margin: 0 0 30px 0;
+}
+
+#playing {
+	display: none;
+}
+
+#winner-container {
+	display: none;
+	border: 2px solid rgb(85, 72, 49);
+	padding: 15px;
+	font-size: 24px;
+	text-align: center;
+}
+
+#winner {
+	font-weight: bold;
+}
+
+#play-btn {
+	display: block;
+	margin: 25px auto 0 auto;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: rgb(95, 14, 10);
+	color: #ffffff;
+	outline: none;
+}
+
+#play-btn:hover {
+	cursor: pointer;
+}
+
+
+.player-input {
+	border: none;
+	margin: 0 10px 0 10px;
+	padding: 5px;
+	background: transparent;
+	border-bottom: 1px solid;
+	box-shadow: 0px 17px 18px 0px rgb(0 0 0 / 5%);
+	outline: none;
+}
+
+#health-container {
+	display: none;
+}
+
+.health-line {
+	width: 300px;
+	background: #ffffff;
+	margin: 10px 20px 0 0;
+
+}
+
+#health-line-one, #health-line-two {
+	width: inherit;
+	background: #59a152;
+	margin-top: 0;
+	font-size: 15px;
+    padding: 5px;
+}
+
+.attack {
+	background: rgb(207, 64, 64);
+	font-size: 16px;
+	color: #ffffff;
+	outline: none;
+	padding: 4px 10px;
+	border-radius: 8px;
+}
+
+#one {
+	background: rgb(29, 79, 145);
+
+}
+
+.attack:hover {
+	cursor: pointer;
+}
+
+#first-name, #second-name {
+	margin-bottom: 0;
+}
+
+.add-image {
+	display: flex;
+}
+
+.image-container {
+	width: 300px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	border: 1px solid black;
+	padding: 20px 0;
+}
+
+#first-image-container {
+	margin: 20px 20px 20px 0;
+}
+
+#second-image-container {
+	margin: 20px 0 20px 20px;
+}
+
+#image1, #image2 {
+	width: 200px;
+	height: 169px;
+	background-position: center;
+	background-size: cover;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Battle of poisoned minds</h1>
+        <div id="game">
+        <div id="main">
+            <p id="error"><b>Please fill players names</b> (required)</p>
+            <label id="player1-label">Nightbringer Side:<input type="text" id="player1" class="player-input"></label>
+            <label id="player2-label">Dawnbringer Side:<input type="text" id="player2" class="player-input"></label>
+        </div>
+
+            <div id="optional"><b>Select avatars</b> (optional)</div>
+            <div class="add-image">
+                <div class="image-container" id="first-image-container">
+                    <input type="file" id="image_input1" accept="image/png, image/jpg">
+                    <div id="image1"></div>
+                </div>
+
+                <div class="image-container" id="second-image-container">
+                    <input type="file" id="image_input2" accept="image/png, image/jpg">
+                    <div id="image2"></div>
+                </div>
+
+            </div>
+
+
+            <button id="play-btn">Play</button>
+
+
+            <div id="health-container">
+                <div class="first-is-playing">
+                    <p id="first-name"></p>
+                    <div class="health-line">
+                        <p id="health-line-one"></p>
+                    </div>
+                    <button id="one" class="attack">Attack</button>
+                </div>
+
+                <div class="second-is-playing">
+                    <p id="second-name"></p>
+                    <div class="health-line">
+                        <p id="health-line-two"></p>
+                    </div>
+                    <button id="two" class="attack">Attack</button>
+                </div>
+            </div>
+            <p id="playing"><span id="player1-span"></span> and <span id="player2-span"></span> are now playing.</p>
+
+            <div id="game">
+                <p id="winner-container"><span id="winner"></span> wins the game.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./index.js"></script>
+
+</html>
